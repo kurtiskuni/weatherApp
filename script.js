@@ -3,6 +3,7 @@ const searchBtn = document.getElementById('searchBtn');
 const searchInput = document.getElementById('searchInput');
 const weather = document.getElementById('weather');
 const setLocation = document.getElementById('set-location');
+const card = document.getElementById('card');
 // Close button
 const close = document.getElementById('close');
 
@@ -150,6 +151,8 @@ async function displayLocalData(data) {
     weather.classList.remove("loading-hide");
 
     document.body.style.backgroundImage = "url('https://source.unsplash.com/1600x900/?" + timezone + "')"
+
+    
 
 }
 
