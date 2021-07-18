@@ -65,7 +65,7 @@ searchBtn.addEventListener('click', (event)=>{
     loadWeather(searchInput.value)
 });
 
-const baseUrl = 'http://api.openweathermap.org/data/2.5/'
+const baseUrl = 'https://api.openweathermap.org/data/2.5/'
 const apiKey = '82dfad48bc8331f1e36871d2c2382e27'
 
 async function loadWeather(location) {
@@ -92,7 +92,7 @@ async function displayData(data) {
 
     locationName.innerHTML = "Weather in " + name;
     // console.log(locationName)
-    weatherIcon.setAttribute('src', "http://openweathermap.org/img/wn/" + icon + ".png");
+    weatherIcon.setAttribute('src', "https://openweathermap.org/img/wn/" + icon + ".png");
     weatherDescription.innerHTML = description;
     currentWeatherTemp.innerHTML = tempRounded;
     weatherHumidity.innerHTML = humidity;
@@ -142,7 +142,7 @@ async function displayLocalData(data) {
 
     locationName.textContent = "Weather at your current location";
     // console.log(locationName)
-    weatherIcon.setAttribute('src', "http://openweathermap.org/img/wn/" + icon + ".png");
+    weatherIcon.setAttribute('src', "https://openweathermap.org/img/wn/" + icon + ".png");
     weatherDescription.innerHTML = description;
     currentWeatherTemp.innerHTML = tempRounded;
     weatherHumidity.innerHTML = humidity;
